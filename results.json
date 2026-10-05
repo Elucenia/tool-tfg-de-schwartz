@@ -1,0 +1,398 @@
+{
+  "id": "tfg-de-schwartz",
+  "at": "2026-10-05T17:30:12.181Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/tfg-de-schwartz/calculator.js",
+    "bytes": 4942,
+    "sha256": "4f0e7165c545a26cab76165e6e91f8879a859f54d46254747514965ac6ae9e3a"
+  },
+  "cases": [
+    {
+      "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+      "input": {
+        "altura": 120,
+        "cr": 0.5
+      },
+      "obtained": {
+        "id": "tfg-de-schwartz",
+        "main": [
+          "99,1",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "raw": {
+          "tfg": 99.11999999999999,
+          "cat": "G1"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.tfg",
+          "expected": 99.12,
+          "obtained": 99.11999999999999,
+          "tolerance": 0.00500001,
+          "difference": 1.4210854715202004e-14,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.cat",
+          "expected": "G1",
+          "obtained": "G1",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tfg",
+          "expected": 99.11999999999999,
+          "obtained": 99.11999999999999,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cat",
+          "expected": "G1",
+          "obtained": "G1",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "99,1",
+          "obtained": "99,1",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL/min/1,73 m²",
+          "obtained": "mL/min/1,73 m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+      "input": {
+        "altura": 100,
+        "cr": 1
+      },
+      "obtained": {
+        "id": "tfg-de-schwartz",
+        "main": [
+          "41,3",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "raw": {
+          "tfg": 41.3,
+          "cat": "G3b"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.tfg",
+          "expected": 41.3,
+          "obtained": 41.3,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.cat",
+          "expected": "G3b",
+          "obtained": "G3b",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tfg",
+          "expected": 41.3,
+          "obtained": 41.3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cat",
+          "expected": "G3b",
+          "obtained": "G3b",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "41,3",
+          "obtained": "41,3",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL/min/1,73 m²",
+          "obtained": "mL/min/1,73 m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+      "input": {
+        "altura": 150,
+        "cr": 3
+      },
+      "obtained": {
+        "id": "tfg-de-schwartz",
+        "main": [
+          "20,7",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "raw": {
+          "tfg": 20.65,
+          "cat": "G4"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.tfg",
+          "expected": 20.65,
+          "obtained": 20.65,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.cat",
+          "expected": "G4",
+          "obtained": "G4",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tfg",
+          "expected": 20.65,
+          "obtained": 20.65,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cat",
+          "expected": "G4",
+          "obtained": "G4",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "20,7",
+          "obtained": "20,7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL/min/1,73 m²",
+          "obtained": "mL/min/1,73 m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+      "input": {
+        "altura": 145.3,
+        "cr": 1
+      },
+      "obtained": {
+        "id": "tfg-de-schwartz",
+        "main": [
+          "60,0",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "raw": {
+          "tfg": 60.008900000000004,
+          "cat": "G2"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.tfg",
+          "expected": 60.01,
+          "obtained": 60.008900000000004,
+          "tolerance": 0.00500001,
+          "difference": 0.0010999999999938836,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.cat",
+          "expected": "G2",
+          "obtained": "G2",
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tfg",
+          "expected": 60.008900000000004,
+          "obtained": 60.008900000000004,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cat",
+          "expected": "G2",
+          "obtained": "G2",
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "60,0",
+          "obtained": "60,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mL/min/1,73 m²",
+          "obtained": "mL/min/1,73 m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 24,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

@@ -3,12 +3,13 @@
     "id": "tfg-de-schwartz",
     "title": "TFG pediátrica (Schwartz à beira do leito)",
     "short": "Filtração glomerular estimada em crianças",
+    "desc": "Calcule a taxa de filtração glomerular estimada em crianças e adolescentes pela equação de Schwartz à beira do leito (2009): 0,413 × altura ÷ creatinina.",
+    "lead": "Estima a taxa de filtração glomerular em crianças e adolescentes a partir da altura e da creatinina sérica dosada por método enzimático.",
+    "kind": "Calculadora",
     "spec": [
       "pediatria",
       "nefrologia"
     ],
-    "desc": "Calcule a taxa de filtração glomerular estimada em crianças e adolescentes pela equação de Schwartz à beira do leito (2009): 0,413 × altura ÷ creatinina.",
-    "lead": "Estima a taxa de filtração glomerular em crianças e adolescentes a partir da altura e da creatinina sérica dosada por método enzimático.",
     "fields": [
       [
         "altura",
@@ -36,42 +37,6 @@
       ]
     ],
     "formula": "<p><strong>TFGe (mL/min/1,73 m²) = 0,413 × altura (cm) ÷ creatinina (mg/dL)</strong></p><p>Equação \"à beira do leito\" (<em>bedside</em>) de Schwartz 2009, derivada no estudo CKiD com creatinina calibrada por método enzimático (rastreável ao IDMS).</p>",
-    "table": [
-      [
-        "TFG (mL/min/1,73 m²)",
-        "Categoria (KDIGO)"
-      ],
-      [
-        "≥ 90",
-        "G1: normal ou alta"
-      ],
-      [
-        "60 a 89",
-        "G2: levemente diminuída"
-      ],
-      [
-        "45 a 59",
-        "G3a"
-      ],
-      [
-        "30 a 44",
-        "G3b"
-      ],
-      [
-        "15 a 29",
-        "G4"
-      ],
-      [
-        "&lt; 15",
-        "G5: falência renal"
-      ]
-    ],
-    "tips": [
-      "Use só com creatinina enzimática (IDMS): com o método de Jaffe, a equação antiga de Schwartz (k de 0,45 a 0,70 conforme a idade) não deve ser misturada com a nova.",
-      "Foi derivada em crianças de 1 a 16 anos com doença renal crônica leve a moderada; superestima a TFG normal e é menos precisa nos extremos.",
-      "Não é válida em lesão renal aguda com creatinina instável nem em quem tem massa muscular muito diferente do habitual (desnutrição, amputação, doença neuromuscular).",
-      "Abaixo de 2 anos, a TFG normal é menor por maturação renal: compare com os valores de referência para a idade em vez das categorias G1 a G5."
-    ],
     "sources": [
       [
         "Schwartz GJ et al. New equations to estimate GFR in children with CKD. J Am Soc Nephrol, 2009.",
@@ -80,6 +45,10 @@
       [
         "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int, 2024.",
         "https://doi.org/10.1016/j.kint.2023.10.018"
+      ],
+      [
+        "Original Schwartz2009;JASN20:629–637;DOI10.1681/ASN.2008030287",
+        "https://www.infectedbloodinquiry.org.uk/sites/default/files/Batch%204/Batch%204/WITN7142008%20-%20New%20equations%20to%20estimate%20GFR%20in%20children%20with%20CKD%20-%2001%20Jan%202009.pdf"
       ]
     ],
     "cases": [
@@ -140,9 +109,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -151,24 +117,150 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T17:15:29.797Z",
+      "total": 3,
+      "passed": 3,
+      "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+      "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "CKi DBedside Schwartz 2009:0,413×altura/Cr IDMS; m L/min/1,73 m²; sem CKi DU 25",
+    "implementationVersion": "tfg-de-schwartz@native-2026-10-03+4f0e7165c545",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2653687/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "TFGe (mL/min/1,73 m²) = 0,413 × altura (cm) ÷ creatinina (mg/dL) Equação \"à beira do leito\" ( bedside ) de Schwartz 2009, derivada no estudo CKiD com creatinina calibrada por método enzimático (rastreável ao IDMS).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "altura",
+            "label": "Altura",
+            "type": "num",
+            "min": 40,
+            "max": 200,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cr",
+            "label": "Creatinina sérica (enzimática)",
+            "type": "num",
+            "min": 0.1,
+            "max": 15,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "212453ad4f72024b1103a716fa4c5691dff63c372ac0425cb592c1b54631b5f4"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Schwartz GJ et al. New equations to estimate GFR in children with CKD. J Am Soc Nephrol, 2009.",
+          "url": "https://doi.org/10.1681/ASN.2008030287",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "New equations to estimate GFR in children with CKD.",
+            "year": "2009",
+            "firstPublicationDate": "2009-01-21",
+            "doi": "10.1681/asn.2008030287",
+            "pmid": "19158356",
+            "pmcid": "PMC2653687",
+            "journal": "Journal of the American Society of Nephrology : JASN",
+            "authors": "Schwartz GJ, Muñoz A, Schneider MF, Mak RH, Kaskel F, Warady BA, Furth SL."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2653687/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "2c0877c7823077c4498c926c551cc35e8726a64237260ad76c5f75b1c9dec28c",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int, 2024.",
+          "url": "https://doi.org/10.1016/j.kint.2023.10.018",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease.",
+            "year": "2024",
+            "firstPublicationDate": "2024-04-01",
+            "doi": "10.1016/j.kint.2023.10.018",
+            "pmid": "38490803",
+            "journal": "Kidney international",
+            "authors": "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/38490803/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T17:15:29.797Z",
+        "total": 3,
+        "passed": 3,
+        "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+        "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "094c246fca928239dd5c218db9f191cffd302cba1efdf688826b9d9ca893f190",
+          "meaning": "Reference to the already recorded per-tool evidence; no new test or approval is created by this synchronization."
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "4f0e7165c545a26cab76165e6e91f8879a859f54d46254747514965ac6ae9e3a"
+    },
+    "limits": "Esta é a equação bedside Schwartz de 2009, derivada de 349 participantes com doença renal crônica no estudo CKiD, cuja elegibilidade de recrutamento foi de 1–16 anos. A creatinina deve ser enzimática e rastreável ao IDMS. O estudo original ressalvou a necessidade de validação adicional em crianças com função renal mais alta antes de usar a fórmula para rastrear todas as crianças. O resultado é uma estimativa indexada a 1,73 m², não TFG medida, diagnóstico isolado ou dose de medicamento; não representa CKiD U25.",
+    "limitsEvidence": {
+      "status": "primary-source-documentation-checked",
+      "sources": [
+        {
+          "url": "https://www.infectedbloodinquiry.org.uk/sites/default/files/Batch%204/Batch%204/WITN7142008%20-%20New%20equations%20to%20estimate%20GFR%20in%20children%20with%20CKD%20-%2001%20Jan%202009.pdf",
+          "edition": "Original Schwartz2009;JASN20:629–637;DOI10.1681/ASN.2008030287",
+          "sectionsActuallyRead": "Abstract/PDF1, Study Population/PDF3, Discussion limits/PDF5–7, Study Participants/PDF7",
+          "access": "primary-original-article-copy-readable-text"
+        },
+        {
+          "report": "reports/review-20261003/egfr-independent-source-oracles.json",
+          "edition": "NIDDK institutional page reviewedMay2025",
+          "sectionsActuallyRead": "Reuso estrito do escopo NIDDK pediatric formulas/units/variants já conferido pelo outro revisor",
+          "access": "inherited-source-scope;own-current-page-timeout"
+        }
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "arithmeticChanged": false
     }
   },
-  "review": {
-    "id": "tfg-de-schwartz",
-    "status": "needs-review",
-    "reason": "O código usa bedside Schwartz 2009 e não coleta idade. A população de derivação é de 1–16 anos; NIDDK prefere CKiD U25 para 1–25 anos. Registrar versão antiga, checar idade elegível e evitar classificação renal adulta automática em menores de 2 anos.",
-    "sourceUrl": "https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/kidney-disease/laboratory-evaluation/estimated-gfr-calculators/adults-pediatrics",
-    "sourceTitle": "NIDDK — eGFR Calculators for Adults & Pediatrics",
-    "sourceDate": "2024-05 (revisão da página)",
-    "publisherRegion": "Estados Unidos / NIDDK",
-    "checkedAt": "2026-09-25",
-    "clinicalValidation": "not-performed",
-    "formulaOverride": "Bedside Schwartz 2009: TFGe = 0,413 × altura (cm) / creatinina (mg/dL). Equação histórica para crianças elegíveis com creatinina padronizada; comparar com CKiD U25."
+  "currentSource": {
+    "file": "apps/website/private/tool-code/tfg-de-schwartz/calculator.js",
+    "bytes": 4942,
+    "sha256": "4f0e7165c545a26cab76165e6e91f8879a859f54d46254747514965ac6ae9e3a"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "e0fd1216746c7f56cc340cc0a5ee8f1b2ab0885c30237b26427822a5df70a880",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 3,
+      "sha256": "c8891fe298cffc362d902531969b4737c1770b1baaf0f150fd4e37546ddaf223",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
