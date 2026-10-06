@@ -1,0 +1,236 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "tfg-de-schwartz",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "b232ee1b792aff73905b27a53fb4102c9b535c75",
+    "oldEngineSha256": "4f0e7165c545a26cab76165e6e91f8879a859f54d46254747514965ac6ae9e3a",
+    "currentEngineSha256": "544833580a2b9b04e62a6138f40db88b949fc7cdec0f8df57fe5cfc253ff48ab"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+      "input": {
+        "altura": 120,
+        "cr": 0.5
+      },
+      "publicOutput": {
+        "id": "tfg-de-schwartz",
+        "main": [
+          "99,1",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "raw": {
+          "tfg": 99.11999999999999,
+          "cat": "G1"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "tfg": 99.12,
+          "cat": "G1"
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "99,1",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "level": "low",
+        "verdict": "Categoria G1: TFG normal ou alta",
+        "note": "A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.",
+        "raw": {
+          "tfg": 99.11999999999999,
+          "cat": "G1"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+      "input": {
+        "altura": 100,
+        "cr": 1
+      },
+      "publicOutput": {
+        "id": "tfg-de-schwartz",
+        "main": [
+          "41,3",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "raw": {
+          "tfg": 41.3,
+          "cat": "G3b"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "tfg": 41.3,
+          "cat": "G3b"
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "41,3",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "level": "mid",
+        "verdict": "Categoria G3b: TFG moderada a gravemente diminuída",
+        "note": "A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.",
+        "raw": {
+          "tfg": 41.3,
+          "cat": "G3b"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+      "input": {
+        "altura": 150,
+        "cr": 3
+      },
+      "publicOutput": {
+        "id": "tfg-de-schwartz",
+        "main": [
+          "20,7",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "raw": {
+          "tfg": 20.65,
+          "cat": "G4"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "tfg": 20.65,
+          "cat": "G4"
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "20,7",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "level": "high",
+        "verdict": "Categoria G4: TFG gravemente diminuída",
+        "note": "A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.",
+        "raw": {
+          "tfg": 20.65,
+          "cat": "G4"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+      "input": {
+        "altura": 145.3,
+        "cr": 1
+      },
+      "publicOutput": {
+        "id": "tfg-de-schwartz",
+        "main": [
+          "60,0",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "raw": {
+          "tfg": 60.008900000000004,
+          "cat": "G2"
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "tfg": 60.01,
+          "cat": "G2"
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "60,0",
+          "mL/min/1,73 m²"
+        ],
+        "label": "TFG estimada (Schwartz à beira do leito, 2009)",
+        "level": "low",
+        "verdict": "Categoria G2: TFG levemente diminuída",
+        "note": "A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.",
+        "raw": {
+          "tfg": 60.008900000000004,
+          "cat": "G2"
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

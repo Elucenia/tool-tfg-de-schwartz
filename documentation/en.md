@@ -69,3 +69,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Category G1: normal or high GFR
+
+The classification into G1 to G5 categories applies from 2 years of age onward; before that, compare with age-specific normal values.
+
+
+### 2
+
+Category G3b: moderately to severely decreased GFR
+
+The classification into G1 to G5 categories applies from 2 years of age onward; before that, compare with age-specific normal values.
+
+
+### 3
+
+Category G4: severely decreased GFR
+
+The classification into G1 to G5 categories applies from 2 years of age onward; before that, compare with age-specific normal values.
+
+
+### 4
+
+Category G2: mildly decreased GFR
+
+The classification into G1 to G5 categories applies from 2 years of age onward; before that, compare with age-specific normal values.
+

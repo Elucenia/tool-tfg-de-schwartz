@@ -1,0 +1,707 @@
+{
+  "id": "tfg-de-schwartz",
+  "implementationVersion": "tfg-de-schwartz@native-2026-10-05+544833580a2b",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoria G1: TFG normal ou alta",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoria G3b: TFG moderada a gravemente diminuída",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoria G4: TFG gravemente diminuída",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoria G2: TFG levemente diminuída",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Category G1: normal or high GFR",
+            "locale": "en",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "The classification into G1 to G5 categories applies from 2 years of age onward; before that, compare with age-specific normal values.",
+            "locale": "en",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Category G3b: moderately to severely decreased GFR",
+            "locale": "en",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "The classification into G1 to G5 categories applies from 2 years of age onward; before that, compare with age-specific normal values.",
+            "locale": "en",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Category G4: severely decreased GFR",
+            "locale": "en",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "The classification into G1 to G5 categories applies from 2 years of age onward; before that, compare with age-specific normal values.",
+            "locale": "en",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Category G2: mildly decreased GFR",
+            "locale": "en",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "The classification into G1 to G5 categories applies from 2 years of age onward; before that, compare with age-specific normal values.",
+            "locale": "en",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoría G1: TFG normal o alta",
+            "locale": "es",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "La clasificación en las categorías G1 a G5 se aplica a partir de los 2 años; antes de eso, comparar con los valores normales para la edad.",
+            "locale": "es",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoría G3b: TFG moderada a gravemente disminuida",
+            "locale": "es",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "La clasificación en las categorías G1 a G5 se aplica a partir de los 2 años; antes de eso, comparar con los valores normales para la edad.",
+            "locale": "es",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoría G4: TFG gravemente disminuida",
+            "locale": "es",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "La clasificación en las categorías G1 a G5 se aplica a partir de los 2 años; antes de eso, comparar con los valores normales para la edad.",
+            "locale": "es",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoría G2: TFG levemente disminuida",
+            "locale": "es",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "La clasificación en las categorías G1 a G5 se aplica a partir de los 2 años; antes de eso, comparar con los valores normales para la edad.",
+            "locale": "es",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Catégorie G1 : DFG normal ou élevé",
+            "locale": "fr",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "La classification en catégories G1 à G5 s’applique à partir de 2 ans ; avant cela, comparer avec les valeurs normales pour l’âge.",
+            "locale": "fr",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Catégorie G3b : DFG modérément à sévèrement diminué",
+            "locale": "fr",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "La classification en catégories G1 à G5 s’applique à partir de 2 ans ; avant cela, comparer avec les valeurs normales pour l’âge.",
+            "locale": "fr",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Catégorie G4 : DFG sévèrement diminué",
+            "locale": "fr",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "La classification en catégories G1 à G5 s’applique à partir de 2 ans ; avant cela, comparer avec les valeurs normales pour l’âge.",
+            "locale": "fr",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Catégorie G2 : DFG légèrement diminué",
+            "locale": "fr",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "La classification en catégories G1 à G5 s’applique à partir de 2 ans ; avant cela, comparer avec les valeurs normales pour l’âge.",
+            "locale": "fr",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kategorie G1: normale oder hohe GFR",
+            "locale": "de",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "Die Einteilung in die Kategorien G1 bis G5 gilt ab dem 2. Lebensjahr; davor mit den altersentsprechenden Normwerten vergleichen.",
+            "locale": "de",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kategorie G3b: mäßig bis stark verminderte GFR",
+            "locale": "de",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "Die Einteilung in die Kategorien G1 bis G5 gilt ab dem 2. Lebensjahr; davor mit den altersentsprechenden Normwerten vergleichen.",
+            "locale": "de",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kategorie G4: stark verminderte GFR",
+            "locale": "de",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "Die Einteilung in die Kategorien G1 bis G5 gilt ab dem 2. Lebensjahr; davor mit den altersentsprechenden Normwerten vergleichen.",
+            "locale": "de",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kategorie G2: leicht verminderte GFR",
+            "locale": "de",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "Die Einteilung in die Kategorien G1 bis G5 gilt ab dem 2. Lebensjahr; davor mit den altersentsprechenden Normwerten vergleichen.",
+            "locale": "de",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoria G1: GFR normale o elevata",
+            "locale": "it",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "La classificazione nelle categorie G1 a G5 vale a partire dai 2 anni; prima di allora, confrontare con i valori normali per l’età.",
+            "locale": "it",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoria G3b: GFR moderatamente o gravemente ridotta",
+            "locale": "it",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "La classificazione nelle categorie G1 a G5 vale a partire dai 2 anni; prima di allora, confrontare con i valori normali per l’età.",
+            "locale": "it",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoria G4: GFR gravemente ridotta",
+            "locale": "it",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "La classificazione nelle categorie G1 a G5 vale a partire dai 2 anni; prima di allora, confrontare con i valori normali per l’età.",
+            "locale": "it",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Categoria G2: GFR lievemente ridotta",
+            "locale": "it",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "La classificazione nelle categorie G1 a G5 vale a partire dai 2 anni; prima di allora, confrontare con i valori normali per l’età.",
+            "locale": "it",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفئة G1: معدل الترشيح الكبيبي طبيعي أو مرتفع",
+            "locale": "ar",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "ينطبق التصنيف إلى الفئات G1 إلى G5 ابتداءً من عمر سنتين؛ وقبل ذلك يُقارن بالقيم الطبيعية المناسبة للعمر.",
+            "locale": "ar",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفئة G3b: معدل الترشيح الكبيبي منخفض بدرجة متوسطة إلى شديدة",
+            "locale": "ar",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "ينطبق التصنيف إلى الفئات G1 إلى G5 ابتداءً من عمر سنتين؛ وقبل ذلك يُقارن بالقيم الطبيعية المناسبة للعمر.",
+            "locale": "ar",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفئة G4: معدل الترشيح الكبيبي منخفض بشدة",
+            "locale": "ar",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "ينطبق التصنيف إلى الفئات G1 إلى G5 ابتداءً من عمر سنتين؛ وقبل ذلك يُقارن بالقيم الطبيعية المناسبة للعمر.",
+            "locale": "ar",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفئة G2: معدل الترشيح الكبيبي منخفض بشكل طفيف",
+            "locale": "ar",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "ينطبق التصنيف إلى الفئات G1 إلى G5 ابتداءً من عمر سنتين؛ وقبل ذلك يُقارن بالقيم الطبيعية المناسبة للعمر.",
+            "locale": "ar",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "G1类：GFR正常或偏高",
+            "locale": "zh",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "G1 至 G5 分级适用于 2 岁及以上；在此之前，应与相应年龄的正常值比较。",
+            "locale": "zh",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "G3b类：GFR中度至重度降低",
+            "locale": "zh",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "G1 至 G5 分级适用于 2 岁及以上；在此之前，应与相应年龄的正常值比较。",
+            "locale": "zh",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "G4类：GFR严重降低",
+            "locale": "zh",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "G1 至 G5 分级适用于 2 岁及以上；在此之前，应与相应年龄的正常值比较。",
+            "locale": "zh",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "G2类：GFR轻度降低",
+            "locale": "zh",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "G1 至 G5 分级适用于 2 岁及以上；在此之前，应与相应年龄的正常值比较。",
+            "locale": "zh",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "カテゴリーG1：正常または高いGFR",
+            "locale": "ja",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "G1からG5の分類は2歳以降に適用される；それ以前は年齢別の正常値と比較する。",
+            "locale": "ja",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "カテゴリーG3b：GFRが中等度から高度に低下",
+            "locale": "ja",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "G1からG5の分類は2歳以降に適用される；それ以前は年齢別の正常値と比較する。",
+            "locale": "ja",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "カテゴリーG4：GFRが高度に低下",
+            "locale": "ja",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "G1からG5の分類は2歳以降に適用される；それ以前は年齢別の正常値と比較する。",
+            "locale": "ja",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "カテゴリーG2：GFRが軽度低下",
+            "locale": "ja",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "G1からG5の分類は2歳以降に適用される；それ以前は年齢別の正常値と比較する。",
+            "locale": "ja",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "120 cm, creatinina 0,5: 0,413 × 120 ÷ 0,5 = 99,1 (G1)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "श्रेणी G1: सामान्य या उच्च GFR",
+            "locale": "hi",
+            "template": "documented-authored-95ac5b072493dcc84a93"
+          },
+          "note": {
+            "text": "G1 से G5 श्रेणियों का वर्गीकरण 2 वर्ष की आयु से लागू होता है; उससे पहले आयु-विशिष्ट सामान्य मानों से तुलना करें।",
+            "locale": "hi",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "100 cm, creatinina 1,0: 41,3 (G3b)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "श्रेणी G3b: GFR मध्यम से गंभीर रूप से कम",
+            "locale": "hi",
+            "template": "documented-authored-4d7aa1bce917a29913d8"
+          },
+          "note": {
+            "text": "G1 से G5 श्रेणियों का वर्गीकरण 2 वर्ष की आयु से लागू होता है; उससे पहले आयु-विशिष्ट सामान्य मानों से तुलना करें।",
+            "locale": "hi",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "150 cm, creatinina 3,0: 20,7 (G4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "श्रेणी G4: GFR गंभीर रूप से कम",
+            "locale": "hi",
+            "template": "documented-authored-7c758d3a0f14c1df15bc"
+          },
+          "note": {
+            "text": "G1 से G5 श्रेणियों का वर्गीकरण 2 वर्ष की आयु से लागू होता है; उससे पहले आयु-विशिष्ट सामान्य मानों से तुलना करें।",
+            "locale": "hi",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "145,3 cm, creatinina 1,0: 60,0 (G2, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "श्रेणी G2: GFR हल्का कम",
+            "locale": "hi",
+            "template": "documented-authored-18854c689d1f158b7082"
+          },
+          "note": {
+            "text": "G1 से G5 श्रेणियों का वर्गीकरण 2 वर्ष की आयु से लागू होता है; उससे पहले आयु-विशिष्ट सामान्य मानों से तुलना करें।",
+            "locale": "hi",
+            "template": "documented-authored-6d3f2c6c37e4b59eb10b"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

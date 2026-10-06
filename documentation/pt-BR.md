@@ -69,3 +69,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Categoria G1: TFG normal ou alta
+
+A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.
+
+
+### 2
+
+Categoria G3b: TFG moderada a gravemente diminuída
+
+A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.
+
+
+### 3
+
+Categoria G4: TFG gravemente diminuída
+
+A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.
+
+
+### 4
+
+Categoria G2: TFG levemente diminuída
+
+A classificação em categorias G1 a G5 vale a partir dos 2 anos; antes disso, compare com os valores normais para a idade.
+

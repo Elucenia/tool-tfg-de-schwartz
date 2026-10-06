@@ -126,7 +126,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "CKi DBedside Schwartz 2009:0,413×altura/Cr IDMS; m L/min/1,73 m²; sem CKi DU 25",
-    "implementationVersion": "tfg-de-schwartz@native-2026-10-03+4f0e7165c545",
+    "implementationVersion": "tfg-de-schwartz@native-2026-10-05+544833580a2b",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2653687/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -223,7 +223,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "4f0e7165c545a26cab76165e6e91f8879a859f54d46254747514965ac6ae9e3a"
+      "implementationHash": "544833580a2b9b04e62a6138f40db88b949fc7cdec0f8df57fe5cfc253ff48ab",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "tfg-de-schwartz@native-2026-10-03+4f0e7165c545",
+          "previousImplementationHash": "4f0e7165c545a26cab76165e6e91f8879a859f54d46254747514965ac6ae9e3a",
+          "implementationHash": "544833580a2b9b04e62a6138f40db88b949fc7cdec0f8df57fe5cfc253ff48ab",
+          "scientificBodySha256": "98cd7a6b1dbde9046643c7c2bef2a1a46a0a67f96f5c1e7f817640cbad47da1d",
+          "metadataContractHash": "212453ad4f72024b1103a716fa4c5691dff63c372ac0425cb592c1b54631b5f4",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Esta é a equação bedside Schwartz de 2009, derivada de 349 participantes com doença renal crônica no estudo CKiD, cuja elegibilidade de recrutamento foi de 1–16 anos. A creatinina deve ser enzimática e rastreável ao IDMS. O estudo original ressalvou a necessidade de validação adicional em crianças com função renal mais alta antes de usar a fórmula para rastrear todas as crianças. O resultado é uma estimativa indexada a 1,73 m², não TFG medida, diagnóstico isolado ou dose de medicamento; não representa CKiD U25.",
     "limitsEvidence": {
@@ -249,15 +277,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/tfg-de-schwartz/calculator.js",
-    "bytes": 4942,
-    "sha256": "4f0e7165c545a26cab76165e6e91f8879a859f54d46254747514965ac6ae9e3a"
+    "bytes": 5147,
+    "sha256": "544833580a2b9b04e62a6138f40db88b949fc7cdec0f8df57fe5cfc253ff48ab"
   },
-  "sourceToolSha256": "e0fd1216746c7f56cc340cc0a5ee8f1b2ab0885c30237b26427822a5df70a880",
+  "sourceToolSha256": "66ed86ba63588c834c817545aa792471d928a39f6cf053da60c3ddf16212c6d0",
   "omittedFullReferenceBanks": [
     {
       "rows": 3,
       "sha256": "c8891fe298cffc362d902531969b4737c1770b1baaf0f150fd4e37546ddaf223",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
